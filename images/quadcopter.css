@@ -1,0 +1,181 @@
+.project {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 45px;
+    color: black;
+}
+
+.project span {
+    color: red;
+}
+.titlecont{
+    width: 100%;
+    height: auto;
+    /* padding: 50px; */
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+}
+.project-quad{
+    background-image: url(quadcopter.jpg);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    margin: 14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid rgba(0,0,0,0.8);
+    /* background-color: #3500d3; */
+    background-position: center;
+}
+.titleoverlay{
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.2s ease-out;
+}
+.project-title{
+    width: 80%;
+    text-align: center;
+    text-overflow: clip;
+    margin: auto;
+    transform: translateY(6px);
+    transition: 0.4s ease-out;
+    font-weight: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-roboarm{
+    background-image: url(roboarm.jpeg);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    margin: 14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid rgba(0,0,0,0.8);
+    /* background-color: #3500d3; */
+    background-position: center;
+}
+.tittleoverlay{
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.2s ease-out;
+}
+.proj-tennis{
+    background-image: url(roboarm.jpeg);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    margin: 14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid rgba(0,0,0,0.8);
+    /* background-color: #3500d3; */
+    background-position: center;
+}
+.tittleoverlay2{
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.2s ease-out;
+}
+.proj-momo{
+    background-image: url(roboarm.jpeg);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    margin: 14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid rgba(0,0,0,0.8);
+    /* background-color: #3500d3; */
+    background-position: center;
+}
+.tittleoverlay3{
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.2s ease-out;
+}
+.hidden{
+    display: none;
+}
+.project-quad:hover .titleoverlay{
+    opacity: 1;
+}
+.project-roboarm:hover .tittleoverlay{
+    opacity: 1;
+}
+.proj-tennis:hover .tittleoverlay2{
+    opacity: 1;
+}
+.proj-momo:hover .tittleoverlay3{
+    opacity: 1;
+}

@@ -1,0 +1,638 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url(robotics-main.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: calc(1500px) ;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.about {
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.red {
+    margin-left: 150px;
+    margin-top: 15px;
+    height: 40px;
+    width: 3px;
+    background-color: red;
+}
+
+.scroll {
+    height: 50px;
+    width: 30px;
+    border: 2px solid white;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll::before,
+.scroll::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border: 2px solid white;
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll 1s ease-in-out infinite
+}
+
+.scroll::before {
+    top: 30%;
+    animation-delay: 0.3s;
+    /* animation: scroll-down 1s ease-in-out infinite; */
+}
+
+@keyframes scroll {
+    0% {
+        top: 20%;
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 90%;
+        opacity: 0;
+    }
+}
+
+.para {
+    margin-left: 100px;
+    border-left: 4px solid red;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+   align-items: center; */
+    padding: 10px;
+}
+
+.p2 {
+    margin-left: 100px;
+}
+
+.lestsep {
+    width: 40px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: black;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.Robocon {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 110vh;
+    background: rgba(0, 0, 0, 0.7) url(roboconBack.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    margin: auto;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+.PageTittle {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200px;
+    font-size: 45px;
+    color: black;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+
+}
+
+.page {
+    color: red;
+    padding: 0;
+    margin: 0;
+}
+
+.PageTittle2 {
+    padding: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.Tittle {
+    font-weight: 600px;
+    font-size: 45px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.Title2 {
+    color: azure;
+}
+
+.subtitle {
+    color: white;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.miniSep {
+    width: 40px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: white;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.miniSep2 {
+    width: 40px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: white;
+    margin: 15px;
+}
+
+.pageText {
+    color: white;
+    margin: auto;
+    line-height: 24px;
+}
+
+.leftText {
+    display: flex;
+    font-weight: lighter;
+    width: 1100px;
+    margin-left: 10px;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.Title3 {
+    margin-top: 45px;
+}
+
+.robo {
+    display: flex;
+    width: 300px;
+    margin: auto;
+    box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 50%);
+    border-radius: 10px;
+    margin-top: 30px;
+    transition: 0.2s ease-in-out;
+    margin-left: 1000px;
+}
+
+.first {
+    background-attachment: fixed;
+    padding-top: 150px;
+    margin-left: 170px;
+    display: block;
+    opacity: 1;
+    transform: translateY(-10px);
+    letter-spacing: 15px;
+    font-weight: 300px;
+    font-size: 120px;
+    transition: 0.2s ease-out;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'zilla slab', serif;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.second {
+    background-attachment: fixed;
+    margin-left: 500px;
+    display: block;
+    opacity: 1;
+    transform: translateY(0px);
+    letter-spacing: 15px;
+    font-weight: 300px;
+    font-size: 60px;
+    transition: 0.2s ease-out;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'zilla slab', serif;
+}
+
+.PageTittle3 {
+    font-weight: 600px;
+    padding: 0;
+    align-items: center;
+    display: flex;
+}
+
+.PT {
+    text-align: center;
+    font-size: 60px;
+    color: black;
+}
+
+.PT span {
+    color: red;
+}
+
+.center-text {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    line-height: 24px;
+}
+
+.robo-cont {
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.robo-img {
+    margin: auto;
+    box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 50%);
+    height: 300px;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    margin-top: 30px;
+    cursor: pointer;
+    overflow: clip;
+}
+
+.robo-img2 {
+    margin: auto;
+    box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 50%);
+    height: 300px;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    margin-top: 30px;
+    cursor: pointer
+}
+
+.team-img {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team {
+    margin: auto;
+    box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 50%);
+    height: 800px;
+    transition: 0.2s ease-in-out;
+    margin-top: 30px;
+}
+
+.project {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 45px;
+    color: black;
+}
+
+.project span {
+    color: red;
+}
+.titlecont{
+    width: 100%;
+    height: auto;
+    /* padding: 50px; */
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+}
+.project-quad{
+    background-image: url(quadcopter.jpg);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    margin: 14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid rgba(0,0,0,0.8);
+    /* background-color: #3500d3; */
+    background-position: center;
+}
+.titleoverlay{
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.2s ease-out;
+}
+.project-title{
+    width: 80%;
+    text-align: center;
+    text-overflow: clip;
+    margin: auto;
+    transform: translateY(6px);
+    transition: 0.4s ease-out;
+    font-weight: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-roboarm{
+    background-image: url(roboarm.jpeg);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    margin: 14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid rgba(0,0,0,0.8);
+    /* background-color: #3500d3; */
+    background-position: center;
+}
+.tittleoverlay{
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.2s ease-out;
+}
+.proj-tennis{
+    background-image: url(roboarm.jpeg);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    margin: 14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid rgba(0,0,0,0.8);
+    /* background-color: #3500d3; */
+    background-position: center;
+}
+.tittleoverlay2{
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.2s ease-out;
+}
+.proj-momo{
+    background-image: url(roboarm.jpeg);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    margin: 14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid rgba(0,0,0,0.8);
+    /* background-color: #3500d3; */
+    background-position: center;
+}
+.tittleoverlay3{
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.2s ease-out;
+}
+.project-quad:hover .titleoverlay{
+    opacity: 1;
+}
+.project-roboarm:hover .tittleoverlay{
+    opacity: 1;
+}
+.proj-tennis:hover .tittleoverlay2{
+    opacity: 1;
+}
+.proj-momo:hover .tittleoverlay3{
+    opacity: 1;
+}
+
+.events{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 45px;
+    color: black;
+}
+.events span{
+    color: red;
+}
+.automax{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7) url(automax.jpeg);
+    background-size: cover;
+    background-position:center;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+}
+.auto-title{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 45px;
+    color:whitesmoke;
+}
+.con-title{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 45px;
+    color:black;
+}
+.con-title span{
+    color: red;
+}
+.main{
+    display:flex;
+    background: rgb(240,240,240);
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.face{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background:#f5f6fa;
+    border-radius: 50px;
+    align-items:center;
+    justify-content: center;
+    margin: 20px;
+    box-shadow:1px 4px 2px 2px #dcdde1 ;
+}
+.face i{
+    transition: all 0.3s linear;
+}
+.face i:hover{
+    transform: scale(1.4);
+}
+.contact{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 45px;
+    color:black;
+}
+.contact span{
+    color: red;
+}
+.email{
+    text-align: center;
+    font-size: 45px;
+}
+.email span{
+    color: rgb(113, 113, 224);
+}
+
+.quad-hide{
+    width: 60%;
+    min-width: 650px;
+    background-color: white;
+    height: 60%;
+    padding: 30px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+.overlay-contantHeader{
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+.overlay-contantTitle{
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 45px;
+    margin-left: 10px;
+}
+.project-title:focus{
+    cursor: pointer;
+}
+.maffic{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7) url(maffic.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+.maffic-title{
+    text-align: center;
+    font-size: 60px;
+    color: whitesmoke;
+}
+.lestsep-white{
+    width: 40px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    margin: auto;
+    margin-top: 10px;
+}
+.media-scroller{
+    margin-top: 20px;
+    --_spacer: var(--size-3);
+     display: grid;
+      gap: var(--_spacer);
+      grid-auto-flow: column;
+      grid-auto-columns: 43%;
+      padding: 0 var(--_spacer) var(--_spacer);
+      overflow-x: auto;
+      overscroll-behavior-inline: contain;
+    }
+    .snaps-inline {
+        scroll-snap-type: inline mandatory;
+        scroll-padding-inline: var(--_spacer, 1rem);
+      }

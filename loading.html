@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        #loading{
+            background: black url(images/robotics.png) no-repeat center center;
+            background-size: 15%;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+        }
+    </style>
+    <div id="loading">
+    </div>
+    
+
+
+
+    <script>
+    
+        var loader=getElementById("loading");
+        window.addEventListener("load",function(){
+            loader.style.display="none"
+        })
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Background Zoom and Slider</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="new.css">
+    </head>
+    <body>
+
+        <section>
+            <div class = "container">
+                <article>
+                    <div class = "img-container">
+                        <img src = "quadcopter.jpg" alt = "">
+
+                        <div class = "content">
+                            <div class = "zoom-text">
+                                Click
+                            </div>
+
+                            <h2>Landscape One</h2>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class = "img-container">
+                        <img src = "roboarm.jpeg" alt = "">
+
+                        <div class = "content">
+                            <div class = "zoom-text">
+                                Click
+                            </div>
+
+                            <h2>Landscape Two</h2>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class = "img-container">
+                        <img src = "robo 2.jpg" alt = "">
+
+                        <div class = "content">
+                            <div class = "zoom-text">
+                                Click
+                            </div>
+
+                            <h2>Landscape Three</h2>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class = "img-container">
+                        <img src = "quadcopter 3.jpg" alt = "">
+
+                        <div class = "content">
+                            <div class = "zoom-text">
+                                Click
+                            </div>
+
+                            <h2>Landscape Four</h2>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- zoom and slider -->
+
+        <div class = "image-view"></div>
+        
+        <div class = "image-box">
+            <!-- <div id = "prev-btn"></div>
+            <div id = "next-btn"></div> -->
+            <div class="overlay-container">
+                <div class="overlay-header">
+                    <div class="overlay-title">QuadCopter</div>
+                    <div class="overlay-close">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="overaly-images">
+                    <div class="left-slider">
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                    </div>
+                    <img src="quadcopter.jpg" class="quad-img" alt>
+                    <div class="right-slider">
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="overlay-content">
+                    About Device</b></h1>This is fully autonomous quad copter works based on the concept of image processing and terrain mapping with the help of high pixel camera module,LiDAR module,LiDAR censor.It's custom build flight controller controls the actuators and stabilizer the drone while in operation.Raspberry Pi works as
+                    flight computer and performance image processing and sends the data received from sensors through the flight controller.It is 
+                    capable of reading Aruco codes and color detection throught Open CV preinstalled in it.The developed drone is also capable Mission 
+                    planning.
+                    <br>
+                    <br>
+                    <br>
+                    <h1><b>Application/Utility:</b></h1>
+                    *It can be used for remote sensing, mapping,surveying,operational oversight,and traffic control. <br>
+                    *pick and drop autonomous drone.</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- <script src="new.js" async defer></script> -->
+    </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/modal.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <style>
+    .primary {
+      width: 100vw;
+      height: 100vh;
+      background: #000000d9;
+      position: fixed;
+      top: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      visibility: hidden;
+      cursor: auto;
+    }
+
+    .secondary {
+      min-width: 55vw;
+      min-height: 82vh;
+      background: white;
+      /* margin-left: auto; */
+      /* margin-right: auto; */
+      overflow-y: hidden;
+      border-radius: 15px;
+      box-shadow: 0px 0px 20px 9px #00000033;
+      z-index: 1001;
+    }
+
+    .content {
+      width: 100%;
+      max-height: 82vh;
+      overflow-y: scroll;
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .content::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .content {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+  </style>
+
+  <section id=" sec-5">
+    <div class="project">
+      Our
+      <span>Projects</span>
+    </div>
+    <div class="lestsep"></div>
+    <div class="titlecont">
+
+      <div class="project-quad" onclick="document.getElementsByClassName('primary')[0].style.visibility = 'unset';">
+        <div class="titleoverlay">
+          <div class="project-title">Autonomous quadcopter</div>
+        </div>
+      </div>
+      <div class="primary">
+        <div class=" secondary">
+          <button onclick=" this.parentElement.parentElement.style.visibility = 'hidden'">close</button>
+          <div class="content">a
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <!-- put your content here -->
+            <div class="overlay-container">
+              <div class="overlay-header">
+                  <div class="overlay-title">QuadCopter</div>
+              </div>
+              <div class="overaly-images">
+                  <div class="left-slider">
+                      <ion-icon name="chevron-back-outline"></ion-icon>
+                  </div>
+                  <img src="quadcopter.jpg" class="quad-img" alt>
+                  <div class="right-slider">
+                      <ion-icon name="chevron-forward-outline"></ion-icon>
+                  </div>
+              </div>
+              <div class="overlay-content">
+                  About Device</b></h1>This is fully autonomous quad copter works based on the concept of image processing and terrain mapping with the help of high pixel camera module,LiDAR module,LiDAR censor.It's custom build flight controller controls the actuators and stabilizer the drone while in operation.Raspberry Pi works as
+                  flight computer and performance image processing and sends the data received from sensors through the flight controller.It is 
+                  capable of reading Aruco codes and color detection throught Open CV preinstalled in it.The developed drone is also capable Mission 
+                  planning.
+                  <br>
+                  <br>
+                  <br>
+                  <h1><b>Application/Utility:</b></h1>
+                  *It can be used for remote sensing, mapping,surveying,operational oversight,and traffic control. <br>
+                  *pick and drop autonomous drone.</div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-roboarm" onclick="document.getElementsByClassName('primary')[1].style.visibility = 'unset';">
+        <div class="tittleoverlay">
+          <div class="project-title">Robotic arm</div>
+        </div>
+      </div>
+      <div class="primary">
+        <div class=" secondary">
+          <button onclick=" this.parentElement.parentElement.style.visibility='hidden' ;">close</button>
+          <div class="content">
+            <!-- put your content here -->
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-tennis" onclick="document.getElementsByClassName('primary')[2].style.visibility = 'unset';">
+        <div class="tittleoverlay2">
+          <div class="project-title">Tennis ball shooter</div>
+        </div>
+      </div>
+      <div class="primary">
+        <div class=" secondary">
+          <button onclick=" this.parentElement.parentElement.style.visibility='hidden' ;">close</button>
+          <div class="content">
+            <!-- put your content here -->
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-momo" onclick="document.getElementsByClassName('primary')[3].style.visibility = 'unset';">
+        <div class="tittleoverlay3">
+          <div class="project-title">Sumo bot</div>
+        </div>
+      </div>
+      <div class="primary">
+        <div class=" secondary">
+          <button onclick=" this.parentElement.parentElement.style.visibility='hidden' ;">close</button>
+          <div class="content">
+            <!-- put your content here -->
+          </div>
+        </div>
+      </div>
+  </section>
+</body>
+
+</html>

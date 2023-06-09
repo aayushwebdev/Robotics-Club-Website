@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+div{
+    display: block;
+}
+.overlay-container{
+    transform:translateY(0px);
+    width: 60%;
+    min-width: 650px;
+    background-color: white;
+    height: 60%;
+    padding: 30px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(20px);
+    transition: 0.3s ease-out;
+}
+.overlay-header{
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+.overlay-title{
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 45px;
+    margin-left: 10px;
+}
+.overlay-close{
+    width: 45px;
+    height: 45px;
+    background-color: red;
+    border-radius: 22.5px;
+    margin-left: auto;
+    margin-right: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+.overaly-images{
+    min-width: 600px;
+    width: 60%;
+    height: 400px;
+    /* background-color: rgba(0,0,0,0.3); */
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left-slider{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 3px rgb(0 0 0 / 20%);
+    transition: 0.3s ease-out;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.quad-img{
+    width: 450px;
+    height: 300px;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 50%);
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.right-slider{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 3px rgb(0 0 0 / 20%);
+    transition: 0.3s ease-out;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.overlay-content{
+    margin-top: 20px;
+    padding: 20px;
+}
